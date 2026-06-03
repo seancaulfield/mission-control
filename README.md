@@ -2,7 +2,8 @@
   <img width="350" alt="Mod Mmm Logo" src="https://i.imgur.com/8TSD5ec.png"/>
 </p>
 
-# Mission Control PCB for the IBM Model M122
+# Mission Control: RAVE EDITION
+### A nearly complete internal replacement for the IBM Model M122: Now with RGB!!
 
 This project is designed to replace all internal compoents of an Model M122 keyboard, and is based off my previous [Mod Mmm Project](https://github.com/dcpedit/mod-mmm).  Only the curved steel backplate is needed for the PCB to be mounted on.
 
@@ -13,11 +14,12 @@ Image gallery: https://imgur.com/a/wuXMWVg
 
 ## Features
 
+* Per-key RGB support
+* High current 5V path (because we're going to be pulling a LOT of current...)
+* FR4 plate files as alternative
 * Hotswap sockets for MX switches
 * Multiple layout support, including ISO, split spacebar, and 4x5 macropad for numpad. [KLE link](http://www.keyboard-layout-editor.com/#/gists/d71adbbb0de71b98bfe3e79a4a607b5c)
 * PCB mount stabilizers
-* Under-switch LED for caps lock and num lock
-* Piezo buzzer
 * Solenoid
 * LCD display
 * USB-C support
@@ -63,12 +65,20 @@ The following is a table of measurements of everything that's stacked on top of 
 | 2u plate mount stabilizer   | 7 - 10| Count varies based on layout
 | 7u plate mount stabilizer   | 1     | For 7u spacebar
 | Switch plate (5 piece set)  | 1     | Optional 1.5mm acrylic
+| Switch plate (5 piece set)  | 1     | Optional 1mm FR4
 | Case foam (under PCB)       | 1     | Optional 2mm EVA
 | Plate Foam                  | 1     | Optional 3.5mm EVA foam (or 2mm + [1.5mm](https://www.aliexpress.us/item/3256804208838525.html?spm=a2g0o.order_list.order_list_main.5.21ef1802FA7EIC&gatewayAdapt=glo2usa&_randl_shipto=US))
 | 2.2" ILI9341 display        | 1     | Optional display, [link](https://a.co/d/10fYStD)
 | 8 pin headers (2.54mm pitch)| 2     | For optional display
 | 8 pin ribbon cable          | 1     | For optional display
 | USB-C panel mount           | 1     | [Link](https://a.aliexpress.com/_mLVMrx6)
+| SK-6812E rev mount LEDs     | 122   | [Link](https://www.adafruit.com/product/4960)
+| 3.5mm height M2.5 solderable standoffs | 76    | 
+| 4mm height M2.5 M-F standoffs | 76    | 
+| 4mm height M2.5 F-F standoffs | 32    | 
+| 3mm M2.5 screws             | 184 |
+| SN74LVC1G125DBV (SOT-23-5 non-inverting buffer) | 1 |
+| 100n 0603 X5R capacitor     | 1 |
 
 For the Mill-Max 315 series sockets, I found it more cost efficient to just buy a really long socket and cut the sizes I need with flush cutters.  [Here's an example of a 1x64 socket.](https://www.mouser.com/ProductDetail/Mill-Max/315-93-164-41-003000?qs=WZRMhwwaLl%252BIMh92Iwf2Uw%3D%3D&countryCode=US&).  Make sure to file down the rough edge after cutting.
 
